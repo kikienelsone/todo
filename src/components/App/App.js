@@ -20,6 +20,12 @@ export default class App extends React.Component {
       ],
       filter: 'all',
     }
+    this.deleteTask = this.deleteTask.bind(this)
+    this.createNewTask = this.createNewTask.bind(this)
+    this.onDone = this.onDone.bind(this)
+    this.deleteAllCompletedTasks = this.deleteAllCompletedTasks.bind(this)
+    this.filter = this.filter.bind(this)
+    this.filtration = this.filtration.bind(this)
   }
 
   createNewTask(task) {
